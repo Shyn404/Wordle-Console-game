@@ -4,7 +4,7 @@ using namespace std;
 const char awnser[5] = {'f','i','g','h','t'};  //you can add the word you want here
 char input[5];
 int tries = 5;
-bool gamerover = false;
+bool gameover = false;
 int holder2;
 
 void Setup()
@@ -14,7 +14,7 @@ void Setup()
 	cout << endl << endl;
 	cout << "enter Word:";
 }
- void T() {
+ void Game() {
 
 	cin >> input;
 	for (int j = 0; j <= 5; j++) {
@@ -30,7 +30,7 @@ void Setup()
 					holder2++;
 								
 					if (holder2 == 5) {
-						gamerover = true;
+						gameover = true;
 												
 					}
 				}
@@ -43,7 +43,7 @@ void Setup()
 					
 				}
 				if (tries == 0) {
-					gamerover = true;
+					gameover = true;
 					break;
 					cout << "Wordle Was: " << awnser;
 
@@ -54,8 +54,9 @@ void Setup()
 } 
  int main()
 {
-	 while (!gamerover) {
+	 while (!gameover) {
 		 Setup();
-		 T();
+		 Game();
 	 }
+	returm 0;
 }
