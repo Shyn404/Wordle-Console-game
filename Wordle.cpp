@@ -58,5 +58,6 @@ void Setup()
 		 Setup();
 		 Game();
 	 }
-	returm 0;
+	return 0;
 }
+
